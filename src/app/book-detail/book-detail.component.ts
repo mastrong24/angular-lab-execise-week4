@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute } from "@angular/router";
+import { BookService } from '../book.service';
 
 import {Book,books} from "../books";
 
@@ -12,7 +13,8 @@ export class BookDetailComponent implements OnInit{
 
 book : Book | undefined
 
-constructor(private activatedRoute: ActivatedRoute){
+constructor(private activatedRoute: ActivatedRoute,
+  private bookservice:BookService){
 
 }
 
