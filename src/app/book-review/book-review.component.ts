@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { BookService } from '../book.service';
 
 
 @Component({
@@ -12,9 +13,9 @@ export class BookReviewComponent implements OnInit{
   review!: Observable<{ name: string, review: string }[]>;
 
   ngOnInit(): void {
-    this.review =  this.cartService.getShippingPrices();
+    this.review =  this.bookService.getReview();
   }
 
-constructor(private cartService: CartService) { }
+constructor(private bookService: BookService) { }
 
 }
