@@ -1,1 +1,6 @@
-<p>book-review works!</p>
+<h3>Book Review </h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
+</div>
