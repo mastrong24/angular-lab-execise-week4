@@ -4,11 +4,11 @@
     "review": "good "
   },
   {
-    "type": "Michael",
-    "price": "good2"
+    "name": "Michael",
+    "review": "good2"
   },
   {
-    "type": "Ham",
-    "price": "good 3"
+    "name": "Ham",
+    "review": "good 3"
   }
 ]
