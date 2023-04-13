@@ -5,7 +5,7 @@ export interface Book {
   description: string;
 }
 
-export const products = [
+export const books = [
   {
     id: 1,
     name: 'Angular',
