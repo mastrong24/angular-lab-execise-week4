@@ -14,7 +14,8 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: BookListComponent },
+      { path: 'books/:book-id', component: BookDetailComponent },
     ])
   ],
   declarations: [
