@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BookReviewComponent } from './book-review/book-review.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     RouterModule.forRoot([
       { path: '', component: BookListComponent },
       { path: 'books/:book-id', component: BookDetailComponent },
+      { path: 'book-review', component: BookReviewComponent },
     ])
   ],
   declarations: [
@@ -23,7 +25,8 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     TopBarComponent,
     ProductListComponent,
     BookListComponent,
-    BookDetailComponent
+    BookDetailComponent,
+    BookReviewComponent
   ],
   bootstrap: [
     AppComponent
