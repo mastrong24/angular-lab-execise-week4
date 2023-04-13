@@ -1,12 +1,14 @@
 <h2>Book Details</h2>
 
+<p>
+  <a routerLink="/bookreview">Book Review </a>
+</p>
+
 <div *ngIf="book">
   <h3>{{ book.name }}</h3>
   <h4>{{ book.price | currency }}</h4>
   <p>{{ book.description }}</p>
   <!-- <button type="button" (click)="addToCart(book)">Buy</button> -->
 
-  <p>
-    <a routerLink="/book-review">Book Review </a>
-  </p>
+ 
 </div>

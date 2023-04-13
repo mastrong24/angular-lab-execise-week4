@@ -17,7 +17,7 @@ import { BookReviewComponent } from './book-review/book-review.component';
     RouterModule.forRoot([
       { path: '', component: BookListComponent },
       { path: 'books/:book-id', component: BookDetailComponent },
-      { path: 'book-review', component: BookReviewComponent },
+      { path: 'bookreview', component: BookReviewComponent },
     ])
   ],
   declarations: [
