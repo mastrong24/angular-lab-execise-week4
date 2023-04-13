@@ -10,10 +10,10 @@ import { BookService } from '../book.service';
 })
 export class BookReviewComponent implements OnInit{
 
-  review!: Observable<{ name: string, review: string }[]>;
+  reviews!: Observable<{ name: string, review: string }[]>;
 
   ngOnInit(): void {
-    this.review =  this.bookService.getReview();
+    this.reviews =  this.bookService.getReview();
   }
 
 constructor(private bookService: BookService) { }
