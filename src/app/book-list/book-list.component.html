@@ -1,29 +1,29 @@
 <h2>Books</h2>
 This is the books list component.
 
-<div *ngFor="let product of products">
+<div *ngFor="let book of books">
   <h3>
-    <a [title] = "product.name + ' details'"
-    [routerLink] = "['/products', product.id]">
+    <a [title] = "book.name + ' details'"
+    [routerLink] = "['/books', book.id]">
     <!-- {{ string interpolation }} -->
-    {{product.id}} - {{product.name}}
+    {{book.id}} - {{book.name}}
     </a>
   </h3>
-    <p *ngIf='product.description'>
-      Description : {{product.description}}
+    <p *ngIf='book.description'>
+      Description : {{book.description}}
     </p>
     <p>
-      Price : {{product.price}}
+      Price : {{book.price}}
     </p>
     <!-- event bidning binds events like user clicks to the logic (function call) in the component ts -->
-<button type="button" (click) = "share()" > Share Product
+<!-- <button type="button" (click) = "share()" > Share book
 </button>
-<!-- passing input to child -->
-<app-product-alerts 
-[product] = "product"
+
+<app-book-alerts 
+[book] = "book"
 (notifyEventEmitterInChild) = "onNotifyHandlerInParent()"
 >
-</app-product-alerts>
+</app-book-alerts> -->
 </div>
 
 
