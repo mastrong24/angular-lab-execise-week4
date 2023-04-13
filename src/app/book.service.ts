@@ -13,7 +13,7 @@ export class BookService {
   
   constructor(private http : HttpClient){}
   
-  getShippingPrices() {
+  getReview() {
     return this.http.get<{name: string, review: string}[]>('/assets/review.json');
   }
   
